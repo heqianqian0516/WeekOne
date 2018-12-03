@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwei.heqianqian20181203.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edi_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:padding="10dp"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="最近搜索"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_clean"
+            android:text="清除"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+      <com.bwei.heqianqian20181203.SearchActivity
+          android:id="@+id/main_layout"
+          android:layout_height="0dp"
+          android:layout_weight="4"
+          android:layout_width="match_parent"
+          ></com.bwei.heqianqian20181203.SearchActivity>
+
+    <TextView
+        android:text="搜索发现"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.bwei.heqianqian20181203.SearchActivity
+        android:id="@+id/sear_layout"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        >
+        <TextView
+            android:text="电动牙刷"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="电动牙刷"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="电动牙刷"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="电动牙刷"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.bwei.heqianqian20181203.SearchActivity>
+
+</LinearLayout>
